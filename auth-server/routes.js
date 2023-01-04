@@ -8,6 +8,8 @@ router.post('/login', apiKeyVerification, (req, res) => {
     const { payload } = req.body
     // verify is payload is correct
     const token = createToken(payload)
+    // register
+    // login details
     res.json({ token })
 })
 
